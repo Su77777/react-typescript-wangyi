@@ -14,7 +14,7 @@ interface IProps {
   children?: ReactNode
 }
 // 定义props的ts类型
-const PlayBar: React.FC<IProps> = (props) => {
+const PlayBar: React.FC<IProps> = () => {
   // 播放状态
   const [playing, setPlaying] = useState(false)
   // 播放进度
@@ -106,7 +106,7 @@ const PlayBar: React.FC<IProps> = (props) => {
     // 重新设置歌曲进度时间
     setCurrentTime(currentTime)
   }
-  function handleSliderProgressClick(value: number) {
+  function handleSliderProgressClick() {
     audioRef.current!.play()
     setPlaying(true)
   }
