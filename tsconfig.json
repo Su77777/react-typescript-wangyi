@@ -1,11 +1,7 @@
 {
   "compilerOptions": {
     "target": "es5",
-    "lib": [
-      "dom",
-      "dom.iterable",
-      "esnext"
-    ],
+    "lib": ["dom", "dom.iterable", "esnext"],
     "allowJs": true,
     "skipLibCheck": true,
     "esModuleInterop": true,
@@ -16,11 +12,16 @@
     "module": "esnext",
     "moduleResolution": "node",
     "resolveJsonModule": true,
-    "isolatedModules": true,
+    "isolatedModules": false,
     "noEmit": true,
-    "jsx": "react-jsx"
+    "jsx": "react-jsx",
+    // 表示当前文件 tsconfig.json的当前目录
+    "baseUrl": ".",
+    // 当前文件目录下的src
+    // 配置别名
+    "paths": {
+      "@/*": ["src/*"]
+    }
   },
-  "include": [
-    "src"
-  ]
+  "include": ["src"]
 }

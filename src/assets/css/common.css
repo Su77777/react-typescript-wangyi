@@ -1,0 +1,29 @@
+body,
+input,
+button,
+select,
+textarea {
+  font-size: 12px;
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f5f5f5;
+}
+.wrapV1 {
+  width: 1100px;
+  margin: 0 auto;
+}
+.wrapV2 {
+  width: 980px;
+  margin: 0 auto;
+}
+.topbar {
+  background: url(../img/topbar.png) no-repeat 0 9999px;
+}
+.ant-message .ant-message-notice-content {
+  position: fixed !important;
+  left: 50% !important;
+  top: 520px !important;
+  transform: translateX(-50%) !important;
+  color: #fff !important;
+  background-color: rgba(0, 0, 0, 0.7) !important;
+}
